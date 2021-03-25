@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#f1f4f4"
+    android:background="#B8B8B8"
     android:orientation="vertical"
     android:padding="8dp"
     tools:context=".MainActivity">
@@ -12,21 +12,21 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:baselineAligned="false"
         android:orientation="horizontal">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
             android:orientation="vertical">
 
             <TextView
                 android:id="@+id/title"
                 android:layout_width="match_parent"
+                android:textColor="@color/cardview_dark_background"
                 android:layout_height="33dp"
                 android:layout_marginTop="2dp"
                 android:layout_weight="1"
-                android:gravity="left"
                 android:text="Plain Text"
                 android:textSize="24sp" />
 
@@ -39,15 +39,18 @@
         android:layout_width="match_parent"
         android:layout_height="171dp"
         android:layout_weight="1"
-        android:background="#fff"
+        android:autofillHints=""
+        android:background="#989898"
         android:ems="10"
         android:gravity="top|left"
+        android:hint="Enter Text:"
         android:inputType="textMultiLine"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="5dp" />
 
     <TextView
         android:id="@+id/textView"
+        android:textColor="@color/cardview_dark_background"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="10dp"
@@ -60,8 +63,9 @@
         android:id="@+id/key"
         android:layout_width="match_parent"
         android:layout_height="45dp"
-        android:background="#fff"
+        android:background="#989898"
         android:ems="10"
+        android:hint="Enter Text:"
         android:inputType="textMultiLine"
         tools:layout_editor_absoluteX="35dp"
         tools:layout_editor_absoluteY="5dp" />
@@ -81,6 +85,7 @@
 
             <TextView
                 android:id="@+id/title2"
+                android:textColor="@color/cardview_dark_background"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
@@ -98,7 +103,7 @@
         android:layout_width="match_parent"
         android:layout_height="299dp"
         android:layout_weight="1"
-        android:background="#fff"
+        android:background="#989898"
         android:ems="10"
         android:gravity="top|left"
         android:inputType="textMultiLine"
